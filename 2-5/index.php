@@ -2,7 +2,12 @@
 
 class Calculator
 {
-
+ public $array $numbers;
+ public function addNumber(int $number)
+ {
+     $this->numbers[] = $number;
+     return $this;
+ }
 }
 
 $calculator = new Calculator();
